@@ -4,13 +4,243 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BARONAS - EVOLUTION ITS 2025</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="baronas.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/examples/jsm/loaders/GLTFLoader": "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
 </head>
 <body>
-    <!-- BARONAS page content -->
-    <h1>BARONAS</h1>
-    <p>National robotics competition for aspiring innovators.</p>
-    <!-- Add more content about BARONAS event -->
-    <script src="script.js"></script>
+    <header>
+        <div class="navbar">
+            <div class="logo-text">
+                <a href="../index.html" class="logo-link">
+                    <img src="../Assets/logo evolution 2.svg" alt="Evolution Logo">
+                    <p class="top">
+                        <span class="evolution-text">EVOLUTION</span> <br>
+                        <span class="year-text">2025</span>
+                    </p>
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../About us/About.html">Tentang Kami</a></li>
+                    <li><a href="../index.html#sub-event">Event</a></li>
+                    <li><a href="../Register Page/index.html" class="register-btn">Register</a></li>
+                    <li><a href="../Login Page/index.html" class="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Navbar Responsive (Tablet & Mobile) -->
+    <div class="navbar-responsive">
+        <div class="logo-text">
+            <a href="../index.html" class="logo-link">
+                <img src="../Assets/logo evolution 2.svg" alt="Evolution Logo">
+                <p class="top">
+                    <span class="evolution-text">EVOLUTION</span> <br>
+                    <span class="year-text">2025</span>
+                </p>
+            </a>
+        </div>
+    
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+    
+    <div class="menu-responsive">
+        <nav>
+            <ul>
+                <li><a href="../About us/About.html">Tentang Kami</a></li>
+                <li><a href="../index.html#sub-event">Event</a></li>
+                <li><a href="../Register Page/index.html" class="register-btn" style="margin: 0%;">Register</a></li>
+                <li><a href="../Login Page/index.html" class="login-btn" style="margin: 0%;">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <img src="../Assets/Background-1.png" alt="Background Image" class="hero-background"/>
+        <img src="../Assets/logo baronas 2.svg" alt="Baronas Logo" class="logo-background">
+        <div class="hero-content">
+            <h1>BARONAS 2025</h1>
+            <span>Lomba Robot Nasional & Paper Competition</span>
+            <div class="scroll-down">
+                <img src="../Arrow Button.svg" alt="Scroll Down" id="scrollToAbout">
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>Apa Itu <span>Baronas?</span></h2>
+        <p>BARONAS (Lomba Robot Nasional) merupakan salah satu sub-event terbesar dalam EVOLUTION ITS 2025. Kompetisi ini menantang pemikiran kritis, kreativitas, dan kolaborasi tim pelajar hingga mahasiswa tingkat nasional untuk merakit, memprogram, dan mengoperasikan robot cerdas guna memecahkan masalah industri modern.</p>
+        
+        <!-- Documentation Button Section -->
+        <div class="documentation">
+            <button class="last-year-doc-btn">DOKUMENTASI BARONAS 2024</button>
+        </div>
+    </section>  
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2>Kategori <span>Kompetisi</span></h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="icon">🤖</div>
+                    <h3>Robot Sumo</h3>
+                    <p>Kompetisi adu kekuatan robot otonom atau manual di atas ring lingkaran (dohyo). Dirancang untuk tingkat SD, SMP, dan SMA.</p>
+                </div>
+                <div class="category-card">
+                    <div class="icon">🏎️</div>
+                    <h3>Line Follower</h3>
+                    <p>Uji kecepatan dan keandalan sensor pembaca garis robot otonom untuk menyelesaikan lintasan berliku dalam waktu singkat.</p>
+                </div>
+                <div class="category-card">
+                    <div class="icon">🏭</div>
+                    <h3>Robot Transporter</h3>
+                    <p>Robot bertugas memindahkan beban logistik industri dari titik start ke area bongkar muat dengan rintangan dinamis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Timeline Section -->
+    <section class="timeline">
+        <h2>Timeline <span>Baronas</span></h2>
+        <section class="time-line-warp">
+            <div class="time-line">
+                <div class="timeline-item">
+                    <div class="node">1</div>
+                    <span>Pendaftaran</span>
+                    <small>15 Juni - 31 Juli</small>
+                </div>
+                <div class="timeline-item">
+                    <div class="node">2</div>
+                    <span>Technical Meeting</span>
+                    <small>15 Agustus 2025</small>
+                </div>
+                <div class="timeline-item">
+                    <div class="node">3</div>
+                    <span>Running Test</span>
+                    <small>5 September 2025</small>
+                </div>
+                <div class="timeline-item">
+                    <div class="node">4</div>
+                    <span>Main Event</span>
+                    <small>6-7 September 2025</small>
+                </div>
+            </div>
+        </section>
+    </section>  
+    
+    <!-- Pendaftaran Section -->
+    <section class="pendaftaran">
+        <div class="pendaftaran-wrap">
+            <div class="baronas-mascot">
+                <img src="../Assets/logo baronas 2.svg" alt="Baronas Logo Large">
+            </div>
+            <div class="pendaftaran-content">
+                <h2>Daftar sekarang!</h2>
+                <p>Tunjukkan inovasi dan ketangkasan tim robot kamu di kancah nasional.</p>
+                <span>Mulai dari Rp150.000,- / Tim</span>
+
+                <div class="pendaftaran-btn">
+                    <a href="../Register Page/index.html" class="btn">Pendaftaran</a>
+                    <a href="#" class="btn btn-outline">Guidebook</a>
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+    <!-- Contact Person Section -->
+    <section class="conper">
+        <h2>Contact Person</h2>
+        <div class="conper-content">
+            <div class="conper-list">
+                <a href="https://wa.me/628123456789" class="btn" target="_blank">CP Sumo (Andi)</a>  
+                <a href="https://wa.me/628987654321" class="btn" target="_blank">CP Line Follower (Budi)</a>  
+            </div>
+        </div>
+    </section>  
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../Assets/logo evolution 2.svg" alt="Evolution Logo" class="footer-logo-img">
+                <h2>EVOLUTION <span>2025</span></h2>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about">About</a></li>
+                        <li><a href="../Login Page/index.html">Login</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Sub-Event</h3>
+                    <ul>
+                        <li><a href="../ELECTRA/electra.html" class="electra">Electra</a></li>
+                        <li><a href="baronas.html" class="baronas">Baronas</a></li>
+                        <li><a href="../EVOLVE/evolve.html" class="evolve">Evolve</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ThreeJS Container -->
+    <div id="container3D" data-model-path="../astronaut_helmet.glb"></div>
+
+    <!-- Scripts -->
+    <script type="module" src="../app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burger = document.querySelector('.burger');
+            const menu = document.querySelector('.menu-responsive');
+            
+            burger.addEventListener('click', function() {
+                menu.classList.toggle('active');
+                burger.classList.toggle('active');
+            });
+        
+            document.addEventListener('click', function(event) {
+                if (!menu.contains(event.target) && !burger.contains(event.target)) {
+                    menu.classList.remove('active');
+                    burger.classList.remove('active');
+                }
+            });
+        
+            const menuLinks = document.querySelectorAll('.menu-responsive a');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.remove('active');
+                    burger.classList.remove('active');
+                });
+            });
+
+            const scrollBtn = document.getElementById('scrollToAbout');
+            if (scrollBtn) {
+                scrollBtn.addEventListener('click', function() {
+                    document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+                });
+            }
+        });
+    </script>
 </body>
 </html>

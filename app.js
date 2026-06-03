@@ -12,8 +12,11 @@ camera.lookAt(new THREE.Vector3(0, 0, 0));
 
 const scene = new THREE.Scene();
 
+const containerElement = document.getElementById('container3D');
+const modelPath = containerElement ? containerElement.getAttribute('data-model-path') : 'astronaut_helmet.glb';
+
 const loader = new GLTFLoader();
-loader.load('astronaut_helmet.glb',
+loader.load(modelPath || 'astronaut_helmet.glb',
   (gltf) => {
     const astro = gltf.scene;
     scene.add(astro);

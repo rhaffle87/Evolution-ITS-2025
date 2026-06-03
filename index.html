@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EVOLUTION 2025</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+          "three/examples/jsm/loaders/GLTFLoader": "https://unpkg.com/three@0.160.0/examples/jsm/loaders/GLTFLoader.js"
+        }
+      }
+    </script>
 </head>
 <body>
     <header>
         <div class="navbar">
             <div class="logo-text">
                 <a href="index.html" class="logo-link">
-                    <img src="Assets\logo evolution 2.svg" alt="Icon 4">
+                    <img src="Assets/logo evolution 2.svg" alt="Icon 4">
                     <p class="top">
                         <span class="evolution-text">EVOLUTION</span> <br>
                         <span class="year-text">2025</span>
@@ -20,10 +28,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="About\About.html">Tentang Kami</a></li>
+                    <li><a href="About us/About.html">Tentang Kami</a></li>
                     <li><a href="#sub-event">Event</a></li>
-                    <li><a href="Register Page\index.html" class="register-btn">Register</a></li>
-                    <li><a href="Login Page\index.html" class="login-btn">Login</a></li>
+                    <li><a href="Register Page/index.html" class="register-btn">Register</a></li>
+                    <li><a href="Login Page/index.html" class="login-btn">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,7 +41,7 @@
     <div class="navbar-responsive">
         <div class="logo-text">
             <a href="index.html" class="logo-link">
-                <img src="Assets\logo evolution 2.svg" alt="Icon 4">
+                <img src="Assets/logo evolution 2.svg" alt="Icon 4">
                 <p class="top">
                     <span class="evolution-text">EVOLUTION</span> <br>
                     <span class="year-text">2025</span>
@@ -51,26 +59,26 @@
     <div class="menu-responsive">
         <nav>
             <ul>
-                <li><a href="About\About.html">Tentang Kami</a></li>
+                <li><a href="About us/About.html">Tentang Kami</a></li>
                 <li><a href="#sub-event">Event</a></li>
-                <li><a href="Register Page\index.html" class="register-btn" style="margin: 0%;">Register</a></li>
-                <li><a href="Login Page\index.html" class="login-btn" style="margin: 0%;">Login</a></li>
+                <li><a href="Register Page/index.html" class="register-btn" style="margin: 0%;">Register</a></li>
+                <li><a href="Login Page/index.html" class="login-btn" style="margin: 0%;">Login</a></li>
             </ul>
         </nav>
     </div>
     <!-- Navbar Responsive (Tablet & Mobile) -->
 
     <section class="hero hero-background" id="hero">
-        <img src="Assets\Astronaut 1.png" alt="Astronaut Image" class="astronaut-background">
+        <img src="Assets/Astronaut 1.png" alt="Astronaut Image" class="astronaut-background">
         <div class="hero-content">
             <h1>EVOLUTION 
                 <br><span>2025</span></br>
             </h1>
             <div class="sub-event-icons">
-                <img src="Assets\logo evolution 2.svg" alt="Icon 1" class="icon1">
-                <img src="Assets\logo electra 2.svg" alt="Icon 2">
-                <img src="Assets\logo baronas 2.svg" alt="Icon 3">
-                <img src="Assets\logo evolve 2.svg" alt="Icon 4">
+                <img src="Assets/logo evolution 2.svg" alt="Icon 1" class="icon1">
+                <img src="Assets/logo electra 2.svg" alt="Icon 2">
+                <img src="Assets/logo baronas 2.svg" alt="Icon 3">
+                <img src="Assets/logo evolve 2.svg" alt="Icon 4">
             </div>
         </div>
         <div class="scroll-down">
@@ -81,7 +89,7 @@
     <section class="about" id="about">
         <h2>ABOUT <span>EVOLUTION</span></h2>
         <p>Evolution (Electrical Event for Technology and Competition) merupakan suatu badan yang menaungi 3 sub-event, yaitu Electra (Electrical Competition Tour & Rally), Baronas (Lomba Robot Nasional), dan Stellar Mind Talks.</p>
-        <button class="learn-more-btn">Lebih Lanjut ></button>
+        <a href="About us/About.html" class="learn-more-link"><button class="learn-more-btn">Lebih Lanjut ></button></a>
     </section>  
 
     <section class="documentation">
@@ -98,67 +106,67 @@
         </section>
         <div class="sub-event-card">
             <div class="sub-event-content">
-                <img src="Assets\logo electra 2.svg" alt="Electra Icon" class="sub-event-icon">
+                <img src="Assets/logo electra 2.svg" alt="Electra Icon" class="sub-event-icon">
                 <div>
                     <h3>Electra</h3>
                     <p>ELECTRA (Electrical Competition Tour & Rally) adalah kompetisi tahunan yang diselenggarakan oleh Departemen Teknik Elektro ITS.</p>
                 </div>
             </div>
-            <a href="ELECTRA\electra.html" class="arrow-btn">></a>
+            <a href="ELECTRA/electra.html" class="arrow-btn">></a>
         </div>
         <div class="sub-event-card">
             <div class="sub-event-content">
-                <img src="Assets\logo baronas 2.svg" alt="Baronas Icon" class="sub-event-icon">
+                <img src="Assets/logo baronas 2.svg" alt="Baronas Icon" class="sub-event-icon">
                 <div>
                     <h3>Baronas</h3>
                     <p>Baronas adalah lomba robot nasional serta kompetisi paper yang diselenggarakan oleh Departemen Teknik Elektro ITS.</p>
                 </div>
             </div>
-            <a href="BARONAS\baronas.html" class="arrow-btn">></a>
+            <a href="BARONAS/baronas.html" class="arrow-btn">></a>
         </div>
         <div class="sub-event-card">
             <div class="sub-event-content">
-                <img src="Assets\logo evolve 2.svg" alt="Evolve Icon" class="sub-event-icon">
+                <img src="Assets/logo evolve 2.svg" alt="Evolve Icon" class="sub-event-icon">
                 <div>
                     <h3>Evolve</h3>
                     <p>Evolution (Electrical Event for Technology and Competition) merupakan suatu badan yang menaungi 3 sub-event.</p>
                 </div>
             </div>
-            <a href="EVOLVE\evolve.html" class="arrow-btn">></a>
+            <a href="EVOLVE/evolve.html" class="arrow-btn">></a>
         </div>
     </section>
 
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-logo">
-            <img src="Assets\logo evolution 2.svg" alt="Evolution Logo" class="footer-logo-img">
+            <img src="Assets/logo evolution 2.svg" alt="Evolution Logo" class="footer-logo-img">
             <h2>EVOLUTION <span>2025</span></h2>
         </div>
-
+ 
         <div class="footer-links">
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="Login Page\index.html">Login</a></li>
+                    <li><a href="Login Page/index.html">Login</a></li>
                 </ul>
             </div>
-
+ 
             <div class="footer-column">
                 <h3>Sub-Event</h3>
                 <ul>
-                    <li><a href="ELECTRA\electra.html" class="electra">Electra</a></li>
-                    <li><a href="BARONAS\baronas.html" class="baronas">Baronas</a></li>
-                    <li><a href="EVOLVE\evolve.html" class="evolve">Evolve</a></li>
+                    <li><a href="ELECTRA/electra.html" class="electra">Electra</a></li>
+                    <li><a href="BARONAS/baronas.html" class="baronas">Baronas</a></li>
+                    <li><a href="EVOLVE/evolve.html" class="evolve">Evolve</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </footer>
-
+ 
     <script src="script.js"></script>
-    <div id="container3D"></div>
+    <div id="container3D" data-model-path="astronaut_helmet.glb"></div>
     <script type="module" src="app.js"></script>
 
     <script>
